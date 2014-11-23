@@ -27,7 +27,7 @@
 
 	<ContentPage.Content>
 		<StackLayout> 
-			<Label Text="Rumble Phone Book" TextColor="Maroon" XAlign="Center" YAlign="Center"/>
+			<Label Text="Rumble Phone Book" TextColor="Red" XAlign="Center" YAlign="Center"/>
 			<ListView x:Name="listView" 
 					  ItemTemplate="{StaticResource ItemTemplate}" 
 					  ItemsSource="{Binding Employees}"
