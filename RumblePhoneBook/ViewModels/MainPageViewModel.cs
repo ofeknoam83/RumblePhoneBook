@@ -25,11 +25,15 @@ namespace RumblePhoneBook
 		private IDevice _device;
 		public MainPageViewModel ()
 		{
-			Employees = DataService.GetEmployees ();
-			Employees.Insert (0, new Employee ());
 			_device = Resolver.Resolve<IDevice>();
-		}
+			Task.Factory.StartNew (() => 
+			{
+				Employees = DataService.GetEmployees ();
+				Employees.Insert (0, new Employee ());
+			});
 
+		}
+			
 
 		public void MakePhoneCall(string number)
 		{
