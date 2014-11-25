@@ -50,11 +50,17 @@ namespace RumblePhoneBook
 			set 
 			{
 				_employees = value;
-				if (PropertyChanged != null)
-					PropertyChanged(this, new PropertyChangedEventArgs("Employees"));
+				OnPropertyChanged ("Employees");
 			}
 		}
 			
+
+		public void OnPropertyChanged(string property)
+		{
+			if (PropertyChanged != null)
+				PropertyChanged(this, new PropertyChangedEventArgs(property));
+		
+		}
 
 		private RelayCommand<Employee> _makePhoneCallCommand;
 		public RelayCommand<Employee> MakePhoneCallCommand 
