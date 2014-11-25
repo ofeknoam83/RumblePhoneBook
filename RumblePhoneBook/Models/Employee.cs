@@ -25,6 +25,9 @@ namespace RumblePhoneBook
 		{
 			get
 			{
+				if (string.IsNullOrEmpty(Name))
+					return string.Empty;
+
 				return "  " + Name + " - " + JobDescription;
 			}
 		}
