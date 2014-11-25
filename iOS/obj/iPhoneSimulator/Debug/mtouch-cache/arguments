@@ -1,0 +1,41 @@
+# Version: 8.4.0.16 (80e9ff7)
+# [first argument, ignore] # /Users/noammeirofek/Projects/RumblePhoneBook/iOS/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.4.0.16/bin/mtouch \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/bin/iPhoneSimulator/Debug/RumblePhoneBookiOS.app \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/RumblePhoneBook/bin/Debug/RumblePhoneBook.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/Xamarin.Forms.1.2.3.6257/lib/MonoTouch10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/Xamarin.Forms.1.2.3.6257/lib/MonoTouch10/Xamarin.Forms.Core.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/Xamarin.Forms.1.2.3.6257/lib/MonoTouch10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/ExifLib.PCL.1.0.0/lib/portable-net45+sl50+win+WindowsPhoneApp81+wp80+MonoAndroid10+MonoTouch10/ExifLib.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/Xamarin.Forms.Labs.1.2.0/lib/MonoTouch/Xamarin.Forms.Labs.iOS.dll \
+	-r \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/../packages/Xamarin.Forms.Labs.1.2.0/lib/MonoTouch/Xamarin.Forms.Labs.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.0 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Users/noammeirofek/Projects/RumblePhoneBook/iOS/bin/iPhoneSimulator/Debug/RumblePhoneBookiOS.exe \
