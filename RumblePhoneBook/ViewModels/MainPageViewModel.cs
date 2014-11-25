@@ -22,23 +22,21 @@ namespace RumblePhoneBook
 {
 	public class MainPageViewModel: INotifyPropertyChanged
 	{
-
+		private IDevice _device;
 		public MainPageViewModel ()
 		{
 			Employees = DataService.GetEmployees ();
 			Employees.Insert (0, new Employee ());
+			_device = Resolver.Resolve<IDevice>();
 		}
 
 
 		public void MakePhoneCall(string number)
 		{
-			var device = Resolver.Resolve<IDevice>();
-
-			if (device != null && device.PhoneService != null)
+			if (_device != null && _device.PhoneService != null)
 			{
-				device.PhoneService.DialNumber("+" + number);
+				_device.PhoneService.DialNumber("+" + number);
 			}
-
 
 		}
 
