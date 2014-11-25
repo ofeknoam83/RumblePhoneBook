@@ -35,7 +35,6 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModels\FirstViewModel.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="Services\DataService.cs" />

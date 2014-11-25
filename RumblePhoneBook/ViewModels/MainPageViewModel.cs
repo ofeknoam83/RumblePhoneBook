@@ -29,7 +29,6 @@ namespace RumblePhoneBook
 			Task.Factory.StartNew (() => 
 			{
 				Employees = DataService.GetEmployees ();
-				Employees.Insert (0, new Employee ());
 			});
 
 		}

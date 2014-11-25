@@ -32,9 +32,6 @@ System.Runtime.Serialization.dll
 System.Runtime.Serialization.Xml.dll
 Xamarin.Forms.Xaml.dll
 System.Xml.ReaderWriter.dll
-Cirrious.MvvmCross.dll
-Cirrious.CrossCore.dll
-System.Resources.ResourceManager.dll
 System.Runtime.Serialization.Primitives.dll
 Newtonsoft.Json.dll
 System.Xml.XDocument.dll

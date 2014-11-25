@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RumblePhoneBook.MainPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		     x:Class="RumblePhoneBook.MainPage"
+		     Title="Make Shit Happen!">
+
+    <ContentPage.Padding>
+    	0, 30, 0, 0
+  	</ContentPage.Padding>
 
 	<ContentPage.Resources>
 		<ResourceDictionary>
@@ -8,7 +15,7 @@
 			        <ViewCell>
 			          <ViewCell.View>
 			        	<StackLayout Orientation="Horizontal">
-			        		<Label Text ="{Binding DisplayText}"/>
+			        		<Label Text ="{Binding DisplayText}" YAlign="Center"/>
 			            </StackLayout>
 			          </ViewCell.View>
 			        </ViewCell>
@@ -19,9 +26,13 @@
 
 
 	<ContentPage.Content>
-		<ListView x:Name="listView" 
-				  ItemTemplate="{StaticResource ItemTemplate}" 
-				  ItemsSource="{Binding Employees}"
-				  />
+		<StackLayout> 
+			<Label Text="Rumble Phone Book" TextColor="Maroon" XAlign="Center" YAlign="Center"/>
+			<ListView x:Name="listView" 
+					  ItemTemplate="{StaticResource ItemTemplate}" 
+					  ItemsSource="{Binding Employees}"
+					  />
+		</StackLayout>
+
 	</ContentPage.Content>
 </ContentPage>
