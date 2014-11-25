@@ -16,6 +16,7 @@ using Xamarin.Forms.Labs.Data;
 using System.Diagnostics;
 using Xamarin.Forms.Labs.Controls;
 using System.Threading.Tasks;
+using Cirrious.MvvmCross.ViewModels;
 
 namespace RumblePhoneBook
 {
@@ -31,11 +32,8 @@ namespace RumblePhoneBook
 
 		public void MakePhoneCall(string number)
 		{
-
-
 			var device = Resolver.Resolve<IDevice>();
-			// not all devices have phone service, f.e. iPod and Android tablets
-			// so we need to check if phone service is available
+
 			if (device != null && device.PhoneService != null)
 			{
 				device.PhoneService.DialNumber("+" + number);
@@ -56,8 +54,17 @@ namespace RumblePhoneBook
 					PropertyChanged(this, new PropertyChangedEventArgs("Employees"));
 			}
 		}
+			
 
-
+		private RelayCommand<Employee> _makePhoneCallCommand;
+		public RelayCommand<Employee> MakePhoneCallCommand 
+		{
+			get
+			{ 
+				return _makePhoneCallCommand ?? new RelayCommand<Employee> (o => MakePhoneCall (o.PhoneNumber));
+			
+			}
+		}
 
 		public event PropertyChangedEventHandler PropertyChanged;
 

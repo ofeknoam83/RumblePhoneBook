@@ -36,7 +36,10 @@ namespace RumblePhoneBook
 				return;
 			Employee selectedEmployee = listView.SelectedItem as Employee;
 
-			_viewModel.MakePhoneCall (selectedEmployee.PhoneNumber);
+			if (selectedEmployee == null)
+				return;
+
+			_viewModel.MakePhoneCallCommand.Execute (selectedEmployee);
 		}
 	}
 }
