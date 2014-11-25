@@ -34,6 +34,7 @@ namespace RumblePhoneBook
 			var listView = sender as ListView;
 			if (listView == null)
 				return;
+
 			Employee selectedEmployee = listView.SelectedItem as Employee;
 
 			if (selectedEmployee == null)
