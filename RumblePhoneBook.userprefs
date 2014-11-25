@@ -1,11 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RumblePhoneBook/App.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone5.8.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RumblePhoneBook/MainPage.xaml.cs">
     <Files>
-      <File FileName="RumblePhoneBook/App.cs" Line="23" Column="23" />
       <File FileName="RumblePhoneBook/MainPage.xaml" Line="1" Column="1" />
-      <File FileName="RumblePhoneBook/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="RumblePhoneBook/Models/Employee.cs" Line="15" Column="15" />
+      <File FileName="RumblePhoneBook/MainPage.xaml.cs" Line="4" Column="4" />
+      <File FileName="RumblePhoneBook/ViewModels/MainPageViewModel.cs" Line="3" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
