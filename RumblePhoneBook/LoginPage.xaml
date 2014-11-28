@@ -6,9 +6,9 @@
 	<ContentPage.Content>
 		
 		<StackLayout>
-			<Label Text="Please enter password:"/>
+			<Label Text="Please enter password (not case sensitive):"/>
 			<Entry x:Name="Password" WidthRequest="20"/>
-			<Button x:Name="GoButton" Text="GO"/>
+			<Button x:Name="GoButton" Text="GO!"/>
 		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>
