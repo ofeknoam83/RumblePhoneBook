@@ -39,6 +39,7 @@ namespace RumblePhoneBook
 			if (_device != null && _device.PhoneService != null)
 			{
 				_device.PhoneService.DialNumber("+" + number);
+
 			}
 
 		}

@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="RumblePhoneBook.Android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.RumblePhoneBook.Android" android:versionCode="2" android:versionName="2.0">
 	<uses-sdk />
-	<application android:label="RumblePhoneBook.Android">
+	<application android:label="RumblePhoneBook.Android" android:icon="@drawable/icon">
 	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
 </manifest>

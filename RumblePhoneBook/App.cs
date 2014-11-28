@@ -19,7 +19,13 @@ namespace RumblePhoneBook
 
 		public static Page GetMainPage ()
 		{	
-			return new MainPage (); 
+			var device = Resolver.Resolve<IDevice>();
+			var isRegistered = DataService.GetIsDeviceRegistered (device.Id);
+			if (isRegistered.Result)
+			{
+				return new NavigationPage (new MainPage ());
+			}
+			return new NavigationPage (new LoginPage()); 
 		}
 
 

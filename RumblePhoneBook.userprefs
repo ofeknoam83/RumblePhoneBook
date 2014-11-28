@@ -1,17 +1,24 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Android/packages.config">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RumblePhoneBook/App.cs">
     <Files>
       <File FileName="RumblePhoneBook/MainPage.xaml" Line="26" Column="26" />
-      <File FileName="RumblePhoneBook/MainPage.xaml.cs" Line="44" Column="44" />
-      <File FileName="RumblePhoneBook/ViewModels/MainPageViewModel.cs" Line="45" Column="45" />
-      <File FileName="RumblePhoneBook/Services/DataService.cs" Line="3" Column="3" />
-      <File FileName="RumblePhoneBook/obj/Debug/MainPage.xaml.g.cs" Line="1" Column="1" />
-      <File FileName="Android/packages.config" Line="12" Column="12" />
+      <File FileName="RumblePhoneBook/MainPage.xaml.cs" Line="27" Column="27" />
+      <File FileName="RumblePhoneBook/ViewModels/MainPageViewModel.cs" Line="42" Column="42" />
+      <File FileName="RumblePhoneBook/Services/DataService.cs" Line="15" Column="15" />
+      <File FileName="RumblePhoneBook/LoginPage.xaml" Line="26" Column="26" />
+      <File FileName="RumblePhoneBook/LoginPage.xaml.cs" Line="57" Column="57" />
+      <File FileName="RumblePhoneBook/App.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Catchpoint exceptionName="System.Exception" includeSubclasses="True" />
+      <Breakpoint file="/Users/noammeirofek/RumblePhoneBook/RumblePhoneBook/Services/DataService.cs" line="43" column="15" />
+      <Breakpoint file="/Users/noammeirofek/RumblePhoneBook/RumblePhoneBook/App.cs" line="26" column="1" />
+      <Breakpoint file="/Users/noammeirofek/RumblePhoneBook/RumblePhoneBook/App.cs" line="28" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches>
     <Watch file="../../RoX/Rumble.Touch/Controls/MainCanvas/SingleItem/GridCells/ArticleCell.cs" line="863" offsetX="408" offsetY="12930" expression="link" liveUpdate="False" />

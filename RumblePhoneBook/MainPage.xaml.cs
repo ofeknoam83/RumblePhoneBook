@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System.Linq;
 using Cirrious.CrossCore;
 using Cirrious.MvvmCross.Plugins.PhoneCall;
+using System.Threading.Tasks;
 
 namespace RumblePhoneBook
 {	
@@ -19,6 +20,7 @@ namespace RumblePhoneBook
 			_viewModel = BindingContext as MainPageViewModel;
 			RegisterToTappEvent ();
 		}
+			
 
 		private void RegisterToTappEvent ()
 		{
