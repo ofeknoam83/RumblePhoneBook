@@ -35,12 +35,21 @@ namespace RumblePhoneBook
 			 
 		}
 
-		public static async Task<bool> GetIsDeviceRegistered(string id)
+		public static bool GetIsDeviceRegistered(string id)
 		{
-			var url = new Uri("http://rumblephonebook.azurewebsites.net/api/devices?ID="+id);
+			var url = new Uri("http://rumblephonebook.azurewebsites.net/api/devices?ID=" + id);
 			var client = new HttpClient ();
-			var result = await client.GetStringAsync (url);
-			return true;
+			var result = client.GetStringAsync (url);
+			try
+			{
+				string resultAsString = result.Result;
+				return true;
+			}
+			catch(Exception e)
+			{
+				return false;
+			}
+
 		}
 
 	

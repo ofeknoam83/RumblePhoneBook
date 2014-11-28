@@ -21,7 +21,7 @@ namespace RumblePhoneBook
 		{	
 			var device = Resolver.Resolve<IDevice>();
 			var isRegistered = DataService.GetIsDeviceRegistered (device.Id);
-			if (isRegistered.Result)
+			if (isRegistered)
 			{
 				return new NavigationPage (new MainPage ());
 			}
